@@ -1,0 +1,23 @@
+#! /usr/bin/env ruby
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# frozen_string_literal: true
+
+current_pwd = Dir.pwd # Current directory of the user when running the script
+project_path = File.expand_path('..', __dir__) # Determine as the project root directory
+
+# Load the core app logic
+$LOAD_PATH.unshift(File.expand_path('../lib', __dir__))
+
+# Ensure bundler can read what gems to be loaded
+Dir.chdir(project_path)
+
+require 'bundler/setup'
+require 'app'
+
+# Put back to where user used to be
+Dir.chdir(current_pwd)
+
+# Bootstrap
+App.start
