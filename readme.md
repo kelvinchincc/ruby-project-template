@@ -8,32 +8,44 @@ This is a boilerplate template for quickly jump-starting a simple Ruby project. 
 - Pre-configured `bin/app` entry point
 - Example `lib/app.rb` module
 - Dependency management with Bundler
-- Licensed under the Mozilla Public License, v. 2.0
+- Licensed under the MIT License
 
 ## Getting Started
 
 1. **Clone the Repository**  
    Clone this template to your local machine:
-```bash
-git clone --depth 1 https://github.com/kelvinchincc/ruby-project-template.git your-project-name
-cd your-project-name
-```
+   ```bash
+   git clone --depth 1 https://github.com/kelvinchincc/ruby-project-template.git your-project-name
+   cd your-project-name
+   ```
 
-2. **Install Dependencies**  
+2. **Clean Up the Template**  
+   - Remove the `.git` folder to detach the project from the template's version control:
+     ```bash
+     rm -rf .git
+     ```
+   - Remove or replace the `license.md` file with your project's license.
+   - Remove or replace the `readme.md` file with documentation specific to your project.
+
+3. **Install Dependencies**  
    Install the required gems using Bundler:
-```bash
-bundle install
-```
+   ```bash
+   bundle install
+   ```
 
-3. **Run the Application**  
+4. **Update `.gitignore`**  
+   The `.gitignore` file includes entries specific to the template. Ensure it meets your project's needs. For example:
+   - Remove `Gemfile.lock` and `rbs_collection.lock.yaml` entries if you want to commit them to version control.
+
+5. **Run the Application**  
    Execute the default application:
-```bash
-ruby bin/app
-```
+   ```bash
+   ruby bin/app
+   ```
 
    You should see the message: `Hello, World!`
 
-4. **Customize the Application**  
+6. **Customize the Application**  
    - Modify `bin/app` to suit your needs. You can rename this file to your desired entry point.
    - Update `lib/app.rb` with your application logic.
 
@@ -41,7 +53,7 @@ ruby bin/app
 
 ```
 ruby-project-template/
-├── .bundle
+├── .bundle/
 │   └── config       # Bundler configuration
 ├── bin/
 │   └── app          # Entry point for the application
@@ -55,4 +67,4 @@ ruby-project-template/
 
 ## License
 
-This project is licensed under the Mozilla Public License, v. 2.0. See [license.md](license.md) for details.
+This project is licensed under the MIT License. See [license.md](license.md) for details.
