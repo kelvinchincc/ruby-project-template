@@ -15,7 +15,7 @@ This is a boilerplate template for quickly jump-starting a simple Ruby project. 
 1. **Clone the Repository**  
    Clone this template to your local machine:
 ```bash
-git clone https://github.com/kelvinchincc/ruby-project-template.git your-project-name
+git clone --depth 1 https://github.com/kelvinchincc/ruby-project-template.git your-project-name
 cd your-project-name
 ```
 
