@@ -41,6 +41,8 @@ ruby bin/app
 
 ```
 ruby-project-template/
+├── .bundle
+│   └── config       # Bundler configuration
 ├── bin/
 │   └── app          # Entry point for the application
 ├── lib/
