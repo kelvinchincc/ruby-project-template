@@ -67,4 +67,7 @@ ruby-project-template/
 
 ## License
 
-This project is licensed under the MIT License. See [license.md](license.md) for details.
+This boilerplate is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+### Disclaimer for Users
+This project is intended to be used as a boilerplate. You are free to modify it to suit your needs and apply your own license to your modified version. However, the original boilerplate, as provided in this repository, remains under the MIT License.
